@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<!-- <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "C:/Users/aVeNgEr/Desktop/samvadiya/web/WEB-INF/dtds/tiles-config_2_0.dtd"> -->
+<!--<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "/home/avenger/workspace/SAMVADIYA/src/main/webapp/WEB-INF/dtds/tiles-config_2_0.dtd">--> 
+
+<tiles-definitions>
+    <definition name="member.messageAlert" template="/WEB-INF/views/messages/mainMessage/Alert1.jsp"></definition>
+    <definition name="member.messageAlertOther" template="/WEB-INF/views/messages/mainMessage/Alert2.jsp"></definition>
+
+    <!-- The main definition with the header footer menu and body -->
+<!--    <definition name="withoutMenuDefination" template="/WEB-INF/views/templates/home/MainTemplates.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/templates/header/header.jsp"></put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/templates/footer/footer.jsp"></put-attribute>
+        <put-attribute name="footerwithoutmenu" value="/WEB-INF/views/templates/footer/FooterWithoutMenu.jsp"></put-attribute>
+    </definition>-->
+
+  <definition name="index.definition" template="/WEB-INF/views/templates/home/MainTemplates.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/templates/header/header.jsp"></put-attribute>
+        <put-attribute name="userStyle" value=""></put-attribute> 
+        <put-attribute name="body" value=""></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/templates/footer/simple_footer.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="index" extends="index.definition">
+        <put-attribute name="title" value="Welcome To Samvadiya"></put-attribute>
+        <put-attribute name="userStyle" value="/WEB-INF/views/templates/home/userProfileStyle.jsp"></put-attribute> 
+        <put-attribute name="body" value="/WEB-INF/views/templates/home/Home.jsp"></put-attribute>
+    </definition>
+    
+<!--    <definition name="error" extends="index.definition">
+        <put-attribute name="title" value="EPFO: Home"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/templates/error/error.jsp"></put-attribute>
+    </definition>-->
+          
+    <!-- logout -->
+<!--    <definition name="logout" extends="withoutMenuDefination">
+        <put-attribute name="title" value="EPFO: Home"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/templates/authentication/logout.jsp"></put-attribute>
+    </definition>-->
+
+</tiles-definitions>
+
