@@ -1,8 +1,8 @@
             
   <div class="row">
-    <div class="col-md-10 no-paddin-xs">
-    <hr>
-     <div class="row">
+    <div class="col-md-8 no-paddin-xs">
+    <br>
+      <div class="row">
 	<!-- left content-->
       <div class="profile-nav- col-md-4">
 	<!-- Friends activity -->
@@ -402,14 +402,39 @@
 
 					</button>
 
-				</div>			      
+				</div></div><!--end right  content-->
 
-			  </div><!--end right  content-->
-
-			</div>
-
-    	</div>
-
-    	</div>
+			</div></div>
+<!--*****************************************************************************Right Most Side**************************-->
+        <div class="row">
+            <br>
+            <div class="col-lg-2 animated fadeInUp" style="height:94%;background:whitesmoke;min-height:800px">
+          <div class="user-block" style="margin-top:5px;padding:5px;border:white solid 1px">
+                <img class="img-circle" src="images/Friends/woman-4.jpg" alt="User Image">
+  	        <span class="username"><a href="#">Katya Angintiew</a></span>
+		<span class="description">Shared publicly - 7:30 PM Today</span>
+	  </div>  
+            </div>
+        
+        
+<!--************************************************************************Right Side2***************************************-->
+<div class="col-md-2 no-paddin-xs">
+       <div class="widget">
+	  <div class="widget-header ">
+	    <h3 class="widget-caption ">Unexplored Places Near You</h3>
+	     </div>
+        <div class="widget-body bordered-top bordered-blue">
+         <div class="col-mod-12 animated fadeInUp" style="height:94%;background:white;">
+               <div class="user-block " style="margin-top:5px;padding:5px;border:whitesmoke solid 1px">
+                <img class="img-circle" src="images/Friends/woman-4.jpg" alt="User Image">
+  	        <span class="username"><a href="#">Katya Angintiew</a></span>
+		<span class="description">Shared publicly - 7:30 PM Today</span>
+	    </div></div>
+	    </div></div></div>
+            
+            </div>
+        
+        
+        </div>
         
     </html>
