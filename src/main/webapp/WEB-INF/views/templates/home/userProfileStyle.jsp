@@ -425,12 +425,36 @@
 	     </div>
         <div class="widget-body bordered-top bordered-blue">
          <div class="col-mod-12 animated fadeInUp" style="height:94%;background:white;">
-               <div class="user-block " style="margin-top:5px;padding:5px;border:whitesmoke solid 1px">
-                <img class="img-circle" src="images/Friends/woman-4.jpg" alt="User Image">
-  	        <span class="username"><a href="#">Katya Angintiew</a></span>
-		<span class="description">Shared publicly - 7:30 PM Today</span>
-	    </div></div>
-	    </div></div></div>
+               <div class="box-body" style="display: block;">
+     <img class="img-responsive" src="images/unexplored/kutub.jpg" alt="Photo">
+     <p>Kutub Minar, New Delhi</p>
+<!--      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button> -->
+     <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+     <span class="pull-right text-muted">127 likes</span>
+     </div></div>
+     
+     <br>
+     <div class="col-mod-12 animated fadeInUp" style="height:94%;background:white;">
+               <div class="box-body" style="display: block;">
+     <img class="img-responsive" src="images/unexplored/hauzkhas.jpg" alt="Photo">
+     <p>Hauz Khas Village, New Delhi</p>
+<!--      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button> -->
+     <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+     <span class="pull-right text-muted">127 likes</span>
+     </div></div>
+     
+       <br>
+     <div class="col-mod-12 animated fadeInUp" style="height:94%;background:white;">
+               <div class="box-body" style="display: block;">
+     <img class="img-responsive" src="images/unexplored/chhatarpur.jpg" alt="Photo">
+     <p>Chhatarpur Temple, New Delhi</p>
+<!--      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button> -->
+     <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+     <span class="pull-right text-muted">127 likes</span>
+     </div></div>
+	    
+	    </div>
+	   </div></div>
             
             </div>
         

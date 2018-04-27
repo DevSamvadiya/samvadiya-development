@@ -40,7 +40,7 @@
    <!--**************************End Header***********************************-->
    
    <!-- **************************Timeline content****************************** -->
-   <div class="container" style="margin-top: 40px">
+   <div class="container-fluid" style="margin-top:35px;">
    <tiles:insertAttribute name="userStyle"></tiles:insertAttribute>
    </div>
    <!-- *********************end timeline content********************************-->
