@@ -432,8 +432,10 @@
         
 <!--************************************************************************Right Side2***************************************-->
 <div id="unexploreArea" class="col-md-2 no-paddin-xs">
-       <div class="widget" style="border-left:solid 1px #999999;" >
-      
+       <div class="widget" style="border:solid 1px #a6e1ec;background:white" >
+       <div class="widget-header ">
+	    <h3 class="widget-caption">Unexplored Places Near You</h3>
+       </div>
          <div class="col-mod-12 animated fadeInUp">
                <div class="box-body">
      <img class="img-responsive" src="images/unexplored/kutub.jpg" alt="Photo">
@@ -441,14 +443,15 @@
 <!--      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button> -->
 <!--      <span class="pull-right text-muted">127 likes</span> -->
      </div></div>
-     <div class="col-mod-12 animated fadeInUp" style="height:94%;">
+   
+     <div class="col-mod-12 animated fadeInUp" >
                <div class="box-body">
      <img class="img-responsive" src="images/unexplored/hauzkhas.jpg" alt="Photo">
      <p class="card-text">Hauz Khas Village, New Delhi</p>
 <!--      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button> -->
 <!--      <span class="pull-right text-muted">127 likes</span> -->
      </div></div>
-     <div class="col-mod-12 animated fadeInUp" style="height:94%;">
+     <div class="col-mod-12 animated fadeInUp">
                <div class="box-body">
      <img class="img-responsive" src="images/unexplored/chhatarpur.jpg" alt="Photo">
      <p class="card-text">Chhatarpur Temple, New Delhi</p>
