@@ -4,7 +4,7 @@
     <br>
       <div class="row">
 	<!-- left content-->
-      <div class="profile-nav- col-md-4">
+      <div class="profile-nav- col-md-4" id="friendsActivity">
 	<!-- Friends activity -->
 	<div class="widget">
 	  <div class="widget-header">
@@ -124,16 +124,20 @@
       </li>
     </ul>
        </div></div></div>
-    <!-- End people yout may know -->											 			      
+    <!-- End people yout may know -->
+    
+    											 			      
   </div>
     <!-- end left content-->
+    
+    
     <!-- right  content-->
 
   <div class="profile-info col-md-8 animated fadeInUp">
        <div class="row">
        <div class="col-md-12"><div class="panel profile-info">
     <form>
-       <textarea class="form-control input-lg p-text-area" rows="2" placeholder="Whats in your mind today?"></textarea>
+       <textarea class="form-control input-lg p-text-area" rows="1" placeholder="Whats in your mind today?"></textarea>
     </form>
 
   <div class="panel-footer">
@@ -145,7 +149,9 @@
         <li><a href="#"><i class="fa fa-microphone"></i></a></li>
        </ul>
   </div>
-  </div></div>			  	
+  </div></div>		
+  
+  	  	
   <!-- post -->
   <div class="col-md-12">
     <div class="box box-widget"><div class="box-header with-border">
@@ -408,11 +414,11 @@
 <!--*****************************************************************************Right Most Side**************************-->
         <div class="row" id='RightColumn'>
             <br>
-            <div id="liveNews" class="col-lg-2 animated fadeInUp" style="background:white;min-height:800px">
+            <div id="liveNews" class="col-lg-2 animated fadeInUp" style="background:white;">
          <div class="text-left">
                         <img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
                         <div class="card-block">
-                              <a  href="#"><h5 class="card-title">Post Title</h5></a>
+                              <h5 class="card-title"><a  href="#">Post Title</a></h5>
                             <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at.</p>
                            
                         </div>
@@ -422,7 +428,7 @@
                       <div class=" text-left">
                        <img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
                         <div class="card-block">
-                            <a  href="#"><h5 class="card-title">Post Title</h5></a>
+                           <h5 class="card-title"><a  href="#">Post Title</a></h5>
                             <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at.</p>
                           
                         </div>
@@ -465,4 +471,3 @@
         
         </div>
         
-    </html>
