@@ -36,12 +36,21 @@
    
      <session-config>
         <session-timeout>20</session-timeout>
+        <cookie-config>
+            <http-only>true</http-only>
+        </cookie-config>
     </session-config>
     
-<!--     <jsp-config> 
-         <taglib> 
-             <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri> 
-         </taglib> 
-     </jsp-config>--> 
+<security-constraint>
+        <web-resource-collection>
+        <web-resource-name>NoAccess</web-resource-name>
+        <url-pattern>/*</url-pattern>
+        <http-method>PUT</http-method>
+        <http-method>DELETE</http-method>
+        <http-method>TRACE</http-method>
+        <http-method>OPTIONS</http-method>
+        </web-resource-collection>
+        <auth-constraint/>
+</security-constraint>
      
 </web-app>

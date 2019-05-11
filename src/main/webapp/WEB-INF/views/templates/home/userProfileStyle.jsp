@@ -137,7 +137,7 @@
        <div class="row">
        <div class="col-md-12"><div class="panel profile-info">
     <form>
-       <textarea class="form-control input-lg p-text-area" rows="1" placeholder="Whats in your mind today?"></textarea>
+       <textarea class="form-control input-lg p-text-area" rows="1" placeholder="What is your Samvaad?"></textarea>
     </form>
 
   <div class="panel-footer">
@@ -158,7 +158,7 @@
      <div class="user-block">
       <img class="img-circle" src="images/Friends/woman-4.jpg" alt="User Image">
       <span class="username"><a href="#">Katya Angintiew</a></span>
-      <span class="description">Shared publicly - 7:30 PM Today</span>
+      <span class="description">Samvaad publicly - 7:30 PM Today</span>
      </div>
      <div class="box-tools">
       <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read">
@@ -189,6 +189,9 @@
     <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
     <span class="pull-right text-muted">45 likes - 2 comments</span>
    </div>
+   
+   
+   
      <div class="box-footer box-comments">
       <div class="box-comment">
         <img class="img-circle img-sm" src="images/Friends/woman-2.jpg" alt="User Image">

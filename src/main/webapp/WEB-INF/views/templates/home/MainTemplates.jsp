@@ -13,7 +13,9 @@
     <meta http-equiv="cache-control" content="max-age=0, must-revalidate, no-cache, no-store, private">
     <meta http-equiv="expires" content="-1">
     <meta http-equiv="pragma" content="no-cache">
-    <link rel="icon" href="images/favicon.png">
+<!--     <link rel="icon" href="images/favicon.png"> -->
+    
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
     <link href="<%=request.getContextPath()%>/scripts/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath()%>/scripts/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath()%>/styles/templates/css/animate.min.css" rel="stylesheet">
@@ -29,7 +31,10 @@
         response.addDateHeader("Expires", -1);
         response.setDateHeader("max-age", 0);
         response.addHeader("cache-Control", "private");
+        String domain=request.getContextPath();
     %> 
+    
+    
      
 <body class="animated fadeIn">
     
@@ -48,7 +53,7 @@
      
     
     <!--**************************Footer***********************************-->
-    <footer class="welcome-footer">
+    <footer class="welcome-footer" style='background-color:; '>
     <tiles:insertAttribute name="footer"></tiles:insertAttribute>
     </footer>
     <!--**************************End Footer***********************************-->
@@ -61,5 +66,4 @@
 
   <script src="<%=request.getContextPath()%>/scripts/templates/js/jquery.1.11.1.min.js"></script>
   <script src="<%=request.getContextPath()%>/scripts/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-  <script src="<%=request.getContextPath()%>/scripts/templates/js/custom.js"></script>
 </html>

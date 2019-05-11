@@ -8,8 +8,11 @@ package com.samvadiya.member.profile.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.samvadiya.security.domain.LoginDomain;
 
 /**
  *
@@ -19,26 +22,32 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/")
 public class UserProfileController {
     
-@RequestMapping(value="/Home")  
+@RequestMapping(value="/home")  
 public ModelAndView home(HttpServletRequest request, HttpServletResponse response) throws Exception { 
-    System.out.println("i am HomePage====");
-    ModelAndView modelAndView = new ModelAndView("home");
+    System.out.println("I am home getting data from db");
+    ModelAndView modelAndView = new ModelAndView("user.home");
     return modelAndView;
    
     }   
     
     
 @RequestMapping(value="/profile")  
-public ModelAndView profile(HttpServletRequest request, HttpServletResponse response) throws Exception { 
+public ModelAndView profile(HttpServletRequest request, HttpServletResponse response,@ModelAttribute("loginDomain") LoginDomain loginDomain) throws Exception { 
     System.out.println("i am HomePage====");
     ModelAndView modelAndView = new ModelAndView("user.profile");
     return modelAndView;
    
     }
 
-@RequestMapping(value="/messages")  
+@RequestMapping(value="/chaupal")  
+public ModelAndView chaupal(HttpServletRequest request, HttpServletResponse response) throws Exception {
+    ModelAndView modelAndView = new ModelAndView("user.chaupal");
+    return modelAndView;
+  }
+
+@RequestMapping(value="/test")  
 public ModelAndView message(HttpServletRequest request, HttpServletResponse response) throws Exception {
-    ModelAndView modelAndView = new ModelAndView("user.message");
+    ModelAndView modelAndView = new ModelAndView("test");
     return modelAndView;
    
     }
