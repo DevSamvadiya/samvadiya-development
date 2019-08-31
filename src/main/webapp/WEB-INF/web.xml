@@ -11,7 +11,7 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>
             /WEB-INF/applicationContext.xml 
-            /WEB-INF/mvc-dispatcher-servlet.xml
+            /WEB-INF/samvadiya-servlet.xml
           </param-value>
     </context-param>
     
@@ -20,7 +20,7 @@
     </listener>
     
     <servlet>
-        <servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-name>samvadiya</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>dispatchOptionsRequest</param-name>
@@ -30,7 +30,7 @@
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-name>samvadiya</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
    
