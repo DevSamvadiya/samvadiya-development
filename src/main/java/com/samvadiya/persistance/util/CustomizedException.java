@@ -9,15 +9,18 @@ package com.samvadiya.persistance.util;
  *
  * @author Pankaj
  */
-public class CustomizedException extends Exception{
-    
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class CustomizedException extends Exception {
 
-	public CustomizedException(String message) {
-        super(message);
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * @param message
+     */
+    public CustomizedException(String message) {
+	super(message);
     }
-    
+
 }
