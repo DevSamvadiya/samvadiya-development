@@ -17,8 +17,8 @@
 <div class="user-modal is-visible">
 		<div class="user-modal-container">
 			<ul class="switcher">
-				<li><a href="#SignIn">Log in</a></li>
-				<li><a href="#New Account">New account</a></li>
+				<li><a href="#SignIn">LOGIN</a></li>
+				<li><a href="#New Account">NEW ACCOUNT</a></li>
 			</ul>
 			<div id="login">
 			<form:form action="${login}" method="post" id="loginForm" role="form" class='form' modelAttribute="loginDomain">

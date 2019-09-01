@@ -23,7 +23,13 @@
      <![endif]-->
      <style>
     #formLogin {
-     background:#F7F7F7;border-radius:4px;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
      }
      </style>
 </head>

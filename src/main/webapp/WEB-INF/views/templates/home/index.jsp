@@ -27,17 +27,18 @@
        <div class="row row-welcome">
         <div class="login-page">
             <div class="row">
-            <div class="col-sm-9 col-md-9 col-lg-3 mt-4" >
-            hellllloooo
+            <div class="col-lg-6">
+           <h2 class="samvadiya-title">Samvadiya</h2>
+           <div class="col-sm-12 col-md-12" id="desktop-title">
+           <h4>Samvadiya helps you connect and share with the people in your life.</h4>
+           </div>
             </div>
             
-                <div class="col-md-4 col-md-offset-4"> 
+                <div class="col-md-5 col-md-offset-1"> 
                 <jsp:include page="../authentication/login_registration.jsp"></jsp:include>
                 </div>
             </div>
-            
-           
-            <div class="row">
+          <div class="row" >
                 <div class="container">
                     <p>
                         <div class="footer-links"> 
@@ -47,7 +48,7 @@
                         	<a href="#">Contact</a> | 
                         	<a href="#">About</a>
                         </div> 
-                        Copyright &copy; Company - All rights reserved</p>
+                        Copyright &copy; Samvadiya - All rights reserved</p>
                 </div>
             </div>
         </div>
