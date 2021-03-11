@@ -71,12 +71,13 @@
         </property> 
      </bean>
 
+
  <bean id="dataSource"
             class="org.springframework.jdbc.datasource.DriverManagerDataSource"
             p:driverClassName="${jdbc.driverClassName}"
-            p:url="${jdbc.url}"
-            p:username="${jdbc.username}"
-            p:password="${jdbc.password}" /> 
+            p:url="#{systemEnvironment['JDBC_DATABASE_URL']}"
+            p:username="#{systemEnvironment['JDBC_DATABASE_USERNAME']}"
+            p:password="$#{systemEnvironment['JDBC_DATABASE_PASSWORD']}" /> 
 <tx:annotation-driven transaction-manager="transactionManager" />
        
 <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
