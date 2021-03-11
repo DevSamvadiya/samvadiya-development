@@ -23,12 +23,12 @@
     <mvc:resources mapping="/docs/**" location="/docs/"    />
     
       <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
-        <property name="mediaTypes">
-            <map>
-                <entry key="html" value="text/html" />
-                <entry key="json" value="application/json" />
-            </map>
-        </property>
+<!--         <property name="mediaTypes"> -->
+<!--             <map> -->
+<!--                 <entry key="html" value="text/html" /> -->
+<!--                 <entry key="json" value="application/json" /> -->
+<!--             </map> -->
+<!--         </property> -->
         
         <property name="viewResolvers">
             <list>
@@ -91,14 +91,14 @@
         <bean id="localeChangeInterceptor"  class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="lang" />
         </mvc:interceptors>
         
-        <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"></bean>
+<!--         <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></bean> -->
         
-        <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
-            <property name="messageConverters">
-                <list>
-                    <ref bean="jacksonMessageConverter"/>
-                </list>
-            </property>
-        </bean>
+<!--         <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> -->
+<!--             <property name="messageConverters"> -->
+<!--                 <list> -->
+<!--                     <ref bean="jacksonMessageConverter"/> -->
+<!--                 </list> -->
+<!--             </property> -->
+<!--         </bean> -->
 
 </beans>
