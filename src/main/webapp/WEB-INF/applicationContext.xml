@@ -34,7 +34,8 @@
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
     <context:component-scan base-package="com.epfo.**" />
-    <mvc:annotation-driven></mvc:annotation-driven>
+<!--     <mvc:annotation-driven></mvc:annotation-driven> -->
+    
      <!-- Captcha Related Mappings -->
     <!--<bean id="captchaController" class="com.captcha.CaptchaController">
             <property name="captchaService" ref="captchaService" />

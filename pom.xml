@@ -1,10 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.1</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
 	<groupId>samvadiya</groupId>
 	<artifactId>SAMVADIYA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<name>SAMVADIYA</name>
+	<description>SAMVADIYA project for Social</description>
 	<repositories>
 		<!--other repositories if any -->
 		<repository>
@@ -14,444 +23,183 @@
 		</repository>
 	</repositories>
 
-<properties>
+	<properties>
 		<springsecurity.version>4.0.4.RELEASE</springsecurity.version>
 	</properties>
 
 
-<pluginRepositories>
-    <pluginRepository>
-        <id>central</id>
-        <name>Maven Plugin Repository</name>
-        <url>http://repo1.maven.org/maven2</url>
-        <layout>default</layout>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-        <releases>
-            <updatePolicy>never</updatePolicy>
-        </releases>
-    </pluginRepository>
-</pluginRepositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<name>Maven Plugin Repository</name>
+			<url>https://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 
 
 	<dependencies>
-	
-	    <dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+
+		<dependency>
 			<groupId>localrepo</groupId>
 			<artifactId>aopalliance-1.0</artifactId>
 			<version>1.0</version>
-	</dependency>
-	
-	 <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jackson-core-asl-1.9.13</artifactId>
-			<version>1.0</version>
 		</dependency>
-		
 		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jackson-core-2.4.0</artifactId>
-			<version>1.0</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
 		</dependency>
-		
+
 		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jackson-annotations-2.4.0</artifactId>
-			<version>1.0</version>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-core</artifactId>
+			<version>3.0.8</version>
 		</dependency>
-		
+
+<dependency>
+    <groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-jsp</artifactId>
+    <version>3.0.8</version>
+</dependency>
+
+
+
 		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jackson-databind-2.4.0</artifactId>
-			<version>1.0</version>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-autotag-core-runtime</artifactId>
+			<version>1.2</version>
 		</dependency>
-		
+
 		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.0</version>
-		</dependency>
-	
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-build-src-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-template</artifactId>
+			<version>3.0.8</version>
 		</dependency>
 
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-context-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-aop-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-         <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-expression-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-         <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-webmvc-portlet-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-        
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-context-support-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-aspects-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-websocket-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-messaging-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-instrument-tomcat-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-instrument-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-orm-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-beans-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-jms-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-webmvc-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-jdbc-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-framework-bom-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-core-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-test-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-tx-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-oxm-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
-		</dependency>
-		
 		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>spring-web-4.0.1.RELEASE</artifactId>
-			<version>1.0</version>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-servlet</artifactId>
+			<version>3.0.8</version>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-api-3.0.1</artifactId>
-			<version>1.0</version>
+
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-request-servlet</artifactId>
+			<version>1.0.7</version>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>displaytag-1.2</artifactId>
-			<version>1.0</version>
+
+		<dependency>
+			<groupId>displaytag</groupId>
+			<artifactId>displaytag</artifactId>
+			<version>1.2</version>
 		</dependency>
-                
-       <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-autotag-core-runtime-1.1.0</artifactId>
-			<version>1.0</version>
-		</dependency>
-		
-       <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-request-servlet-1.0.0</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-request-api-1.0.6</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-template-3.0.1</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-servlet-3.0.1</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                 <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-jsp-3.0.1</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-core-3.0.1</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
+
+
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
 			<artifactId>jstl-api</artifactId>
-			<version>1.0</version>
+			<version>1.2</version>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
+
+
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
 			<artifactId>jstl-impl</artifactId>
-			<version>1.0</version>
+			<version>1.2</version>
+			<scope>runtime</scope>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>core-2.2</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>log4j-1.2.17</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>slf4j-api-1.7.6</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-<!--		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>org-apache-commons-codec</artifactId>
-			<version>1.0</version>
-		</dependency>-->
-                
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>org-apache-commons-logging</artifactId>
-			<version>1.0</version>
-		</dependency>
-		
+
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j</artifactId>
+    <version>1.3.8.RELEASE</version>
+</dependency>
+
+
+
+
+
 		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>org.apache.commons.httpclient</artifactId>
-			<version>1.0</version>
-		</dependency>
-        
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>commons-digester-2.1</artifactId>
-			<version>1.0</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>commons-beanutils-1.9.2</artifactId>
-			<version>1.0</version>
-		</dependency>
-		        
-		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>commons-fileupload-1.2</artifactId>
-			<version>1.0</version>
-		</dependency> 
-		
-		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>commons-collections-3.2.1</artifactId>
-			<version>1.0</version>
-		</dependency> 
-		
-		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>commons-io-2.4</artifactId>
-			<version>1.0</version>
-		</dependency>    
-		
-		<dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>commons-lang-2.6</artifactId>
-			<version>1.0</version>
-		</dependency>  
-        
-        <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>javase-2.2</artifactId>
-			<version>1.0</version>
-		</dependency>
-                <dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>6.0</version>
+			<version>8.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jaxp-api</artifactId>
-			<version>1.0</version>
+
+
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jaxrpc-impl</artifactId>
-			<version>1.0</version>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jaxrpc-spi</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>jaxrpc-api</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <dependency>
-			<groupId>localrepo</groupId>
-			<artifactId>tiles-request-jsp-1.0.2</artifactId>
-			<version>1.0</version>
-		</dependency>
-                
-                <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-                <dependency>
-                 <groupId>mysql</groupId>
-                 <artifactId>mysql-connector-java</artifactId>
-                 <version>5.1.6</version>
-                </dependency>
-        <!-- *********************Spring Security ****************************888-->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-            <version>${springsecurity.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
-            <version>${springsecurity.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-taglibs</artifactId>
-            <version>${springsecurity.version}</version>
-        </dependency>
-                
-	   </dependencies>
-       	<build>
+
+
+		<!-- *********************Spring Security ****************************888 -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.security</groupId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.security</groupId> -->
+		<!-- <artifactId>spring-security-config</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.security</groupId> -->
+		<!-- <artifactId>spring-security-taglibs</artifactId> -->
+		<!-- </dependency> -->
+
+	</dependencies>
+	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<skip>true</skip>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.3</version>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
-			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <version>3.0.2</version>
-            <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals><goal>copy</goal></goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                                <groupId>com.github.jsimone</groupId>
-                                <artifactId>webapp-runner</artifactId>
-                                <version>8.5.27.0</version>
-                                <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
 		</plugins>
-</build>
-        
+	</build>
+
+
 
 
 </project>

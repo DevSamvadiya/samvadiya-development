@@ -6,7 +6,8 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     
-    <display-name>Issue Tracking System</display-name>
+    <display-name>Issue Tracking System
+    </display-name>
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
